@@ -2,15 +2,15 @@
 
 ## Team Name
 <!-- Replace with your team name -->
-Team _______
+Team VaiBrasa
 
 ## Team Members
 
 | Member | Vulnerability Found | Branch Name |
 |--------|-------------------|-------------|
-| _______ | _______ | _______ |
-| _______ | _______ | _______ |
-| _______ | _______ | _______ |
+| Arnaldo Neto | Missing X-Frame-Options Header on blog | arnaldo_clickjacking_xframe |
+| Joseane da Silva | Publicly accessible Redis | joseane_publicly_accessible_redis |
+| Pedro Souza | Exposed .git repository with credential leak | pedro_.git_exposed |
 
 ## Videos
 
