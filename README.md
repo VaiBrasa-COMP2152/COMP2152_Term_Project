@@ -16,9 +16,9 @@ Team VaiBrasa
 
 Each team member records a short video (max 3 minutes) explaining their vulnerability. Add your YouTube links below:
 
-- Member 1: https://youtube.com/watch?v=_______
-- Member 2: https://youtube.com/watch?v=_______
-- Member 3: https://youtube.com/watch?v=_______
+- Arnaldo Neto: https://youtu.be/tBDMlLtk0lQ
+- Joseane da Silva: https://youtu.be/7BV7oE81nQE
+- Pedro Souza: https://youtu.be/YWSh6x8Duig
 
 ## Target
 
